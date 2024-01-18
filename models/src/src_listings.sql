@@ -2,7 +2,7 @@ WITH raw_listings AS (
     SELECT
         *
     FROM
-                {{ source(
+        {{ source(
             'airbnb',
             'listings'
         ) }}
